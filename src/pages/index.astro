@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro";
+import HeroImage from "../components/HeroImage.astro";
+import BentoCard from "../components/BentoCard.astro";
+import GiftIcon from "../components/icons/GiftIcon.astro";
+import FormRSV from "../components/FormRSV.astro";
+---
+
+<Layout
+title="Los 50 de Caro · 6 de Febrero de 2026"
+description="Celebrando los 50 años de Carolina con una fiesta inolvidable.">
+
+    <Section class="min-h-screen items-stretch grid grid-cols-1  md:grid-cols-2 gap-x-5 pt-20 md:pt-0">
+      <div class="flex flex-col justify-center text-center md:text-left animate-fade-in-down md:animate-fade-in-right ">
+        <h1 
+        class="text-6xl text-center bg-gradient-to-r from-slate-800 to-slate-800 bg-clip-text text-transparent font-extrabold  leading-tight dark:from-neutral-100 dark:to-stone-400">
+          ¡Mis primeros 50!
+        </h1>
+        <p 
+        class="text-lg font-extralight text-center  text-gray-700 dark:text-gray-400 mt-3 md:mt-5">
+          ¡Te invito a esta noche tan especial, <span class="bg-gradient-to-r font-bold from-slate-800 to-slate-800 bg-clip-text text-transparent dark:from-neutral-100 dark:to-stone-400 ">¡Mi cumpleaños!</span> donde no puede faltar la <span class="font-bold text-blue-500 ">alegría, buena onda, y muchas ganas de bailar.</span>
+          
+        </p>
+      </div>
+      <div class="mt-5 justify-center flex items-center drop-shadow-2xl drop-shadow-black/40 animate-fade-in-up md:animate-fade-in-left">
+        <HeroImage />
+      </div>
+    </Section>
+
+    <Section id="event">
+      <h2 class="font-bold text-3xl mb-8 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center md:mb-15">
+        ¿Qué tengo que saber sobre el festejo?
+      </h2>
+        <div class="mx-auto max-w-6xl grid md:grid-cols-2 gap-6">
+          <BentoCard>
+            <h3 class="bg-gradient-to-r from-slate-700 to-slate-800 bg-clip-text text-transparent font-bold text-2xl mb-4 dark:from-neutral-100 dark:to-stone-400">
+              ¿Cuándo será el festejo?
+            </h3>
+            <p class="text-gray-700 text-lg dark:text-gray-400">
+              Si bien mi cumple es el 7, el festejo va a ser el <span class="text-gold-accent">6 de Febrero</span> a partir de las <span class="text-pink-accent">22:00 horas</span>. ¡Te esperamos para recibir juntos mi cumpleaños #50! <br>
+              <span class="dark:text-white/90 text-black/90 ">(Prohibido decir "Feliz cumple" hasta las 00hs 😉)</span>
+            </p>
+          </BentoCard>
+          <BentoCard class="col-start-1">
+            <h3 class="bg-gradient-to-r from-slate-700 to-slate-800 bg-clip-text text-transparent font-bold text-2xl mb-4 dark:from-neutral-100 dark:to-stone-400">
+              ¿Y dónde va a ser?
+            </h3>
+            <p class="text-gray-700 text-lg dark:text-gray-400">
+              La misma tendrá lugar en el<span class="text-pink-accent"> Salón Sociedad Siria de Socorros Mutuos, Belgrano 140. </span>Un espacio cómodo y preparado para recibirlos a todos.
+            </p>
+          </BentoCard>
+          <BentoCard>
+            <h3 class="bg-gradient-to-r from-slate-700 to-slate-800 bg-clip-text text-transparent font-bold text-2xl mb-4 dark:from-neutral-100 dark:to-stone-400">
+              Dress code
+            </h3>
+            <p class="text-gray-700 text-lg dark:text-gray-400">
+              Para el que no sabe aleman, seria codigo de vestimenta 😂. Venite como quieras. <span class="text-blue-400">Si tenes brillos, traelos y brilla conmigo!</span> 😜 
+            </p>
+          </BentoCard>
+          <div class="col-span-1 col-start-1 md:col-start-2 md:row-span-3 md:row-start-1">
+            <iframe class="rounded-3xl size-full shadow-2xl shadow-black/50 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.071179251906!2d-60.951146223531346!3d-34.59142815685061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb2bfbf7de33%3A0x83696970e2c9616c!2sSociedad%20Siria%20de%20Socorros%20Mutuos!5e1!3m2!1ses!2sar!4v1759378493702!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" title="Ubicacion del festejo en Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+    </Section>
+    
+
+    <Section class="pt-10 md:pt-40" id="gift">
+      <h2 class="font-bold text-3xl mb-8 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center flex flex-col items-center gap-y-2">
+        <GiftIcon class="size-14 text-black dark:text-gray-300"/>
+        Regalo
+      </h2>
+        <div class="text-center font-bold text-pretty max-w-xl mx-auto text-black text-lg dark:text-gray-300">
+          <p>
+            Nada es más importante que tu presencia, pero si deseas hacerme un presente podés depositarlo en el siguiente alias:
+          </p>
+          <p class="mt-5 font-extralight border-b border-black/10 dark:border-white/10 ">
+            <span class="text-white/30">Alias: </span>Caro5.0
+          </p>
+      </div>
+    </Section>
+    <Section class="py-16 md:pt-40 " id="assistance">
+      <FormRSV />
+    </Section>
+</Layout>

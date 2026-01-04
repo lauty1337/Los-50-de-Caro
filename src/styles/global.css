@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@midudev/tailwind-animations";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+body {
+  font-family: 'Onest Variable', sans-serif;
+}
+
+@theme {
+  --color-gold-accent: #D4Af37;
+  --color-pink-accent: #E76F51;
+  --breakpoint-xs: 450px;
+}
+@layer utilities {
+  .theme-transition {
+    transition: background-color 0.7s ease, background-image 1s ease;
+  }
+}

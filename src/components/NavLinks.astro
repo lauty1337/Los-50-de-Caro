@@ -1,0 +1,32 @@
+---
+import AssistanceIcon from './icons/AssistanceIcon.astro';
+import EventIcon from './icons/EventIcon.astro';
+import GiftIcon from './icons/GiftIcon.astro';
+import NavLink from './NavLink.astro';
+---
+
+
+<nav>
+    <ul class="flex items-center justify-center left-1 gap-2 lg:gap-6 text-[12px] xs:text-lg  text-black opacity-90 dark:text-white">
+
+        <NavLink
+            href="#event"
+            aria-label="Ir a la sección del evento">
+            <EventIcon class="size-5"   />
+            Evento
+        </NavLink>
+
+        <NavLink
+            href="#gift"
+            aria-label="Ir a la sección del regalo">
+            <GiftIcon class="size-5" />
+            Regalo
+        </NavLink>
+        <NavLink
+            href="#assistance"
+            aria-label="Ir a la sección de confirmación de asistencia">
+            <AssistanceIcon class="size-5" />
+            Asistencia
+        </NavLink>
+    </ul>
+</nav>

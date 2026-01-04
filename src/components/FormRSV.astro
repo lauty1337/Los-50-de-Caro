@@ -1,0 +1,53 @@
+<div class="max-w-xl mx-auto p-6 bg-white/10 backdrop-blur-3xl border border-black/10 dark:bg-black/10 dark:border-white/10 rounded-2xl shadow-2xl">
+    <h2 class="font-bold text-3xl mb-8 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-center md:mb-15">
+      Confirmá tu asistencia !
+    </h2>
+
+    <form id="rsvpForm" class="space-y-4">
+      <!-- Nombre -->
+      <label class="block">
+        <span class="block text-sm font-medium mb-2 dark:text-white">Tu nombre *</span>
+        <input type="text" id="name" required placeholder="Tu nombre..."
+          class="w-full  rounded-lg border bg-transparent border-gray-300 dark:border-gray-600 px-4 py-2 focus:outline-none dark:text-white focus:ring-1 focus:ring-white" />
+      </label>
+
+      <!-- Condición alimentaria -->
+      <label class="block py-5">
+        <span class="block text-sm font-medium mb-2 dark:text-white">Condición alimentaria *</span>
+        <select id="food" required
+          class="w-full rounded-lg border border-gray-300 text-black dark:text-white dark:border-gray-600 p-2 focus:outline-none focus:ring-1  focus:ring-white cursor-pointer">
+          <option value="" disabled selected hidden>Seleccioná una opción...</option>
+          <option value="Ninguna" class="text-black">Ninguna</option>
+          <option value="Celíaco/a" class="text-black">Celíaco/a</option>
+          <option value="Vegetariano/a" class="text-black">Vegetariano/a</option>
+          <option value="Vegano/a" class="text-black">Vegano/a</option>
+          <option value="Otro" class="text-black">Otro</option>
+        </select>
+      </label>
+
+      <!-- Botón enviar -->
+      <button type="submit"
+        class="cursor-pointer w-full border text-gray-800 border-gray-300 font-light py-2 px-4 rounded-full dark:bg-gray-800 dark:border-gray-600 dark:text-white hover:bg-gray-900 hover:border-gray-700 hover:text-white dark:hover:bg-gray-100 dark:hover:border-gray-300 dark:hover:text-black  transition">
+        Enviar a WhatsApp
+      </button>
+    </form>
+</div>
+
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("rsvpForm");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const food = document.getElementById("food").value;
+      const phone = "5492364346996"; 
+
+      const message = `Hola Caro! Soy ${name} y confirmo mi asistencia.\nCondición alimentaria: ${food}.`;
+
+      const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, "_blank");
+    });
+  });
+</script>
