@@ -9,25 +9,41 @@ const { title = "Los 50 de Carolina · 7 de Febrero", description =""} = Astro.p
 <!doctype html>
 <html lang="es" class="">
 	<head>
-		<meta name="description" content={description} />
-		<meta charset="UTF-8" />
-		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://los-50-de-caro.vercel.app/">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Los 50 de Caro · 6 de Febrero de 2026">
-		<meta property="og:description" content="Veni a festejar los 50 de Caro con una fiesta inolvidable.">
-		<meta property="og:image" content="https://los-50-de-caro.vercel.app/img/fotoenlace.png">
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta property="twitter:domain" content="los-50-de-caro.vercel.app">
-		<meta property="twitter:url" content="https://los-50-de-caro.vercel.app/">
-		<meta name="twitter:title" content="Los 50 de Caro · 6 de Febrero de 2026">
-		<meta name="twitter:description" content="Veni a festejar los 50 de Caro con una fiesta inolvidable.">
-		<meta name="twitter:image" content="https://los-50-de-caro.vercel.app/img/fotoenlace.png">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<title>{title}</title>
-	</head>
+  		<meta charset="UTF-8" />
+
+  <title>Los 50 de Caro · 6 de Febrero de 2026</title>
+
+  <meta
+    name="description"
+    content="Vení a festejar los 50 de Caro con una fiesta inolvidable."
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://los-50-de-caro.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Los 50 de Caro · 6 de Febrero de 2026" />
+  <meta
+    property="og:description"
+    content="Vení a festejar los 50 de Caro con una fiesta inolvidable."
+  />
+  <meta
+    property="og:image"
+    content="https://los-50-de-caro.vercel.app/img/fotoenlace.png"
+  />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:image"
+    content="https://los-50-de-caro.vercel.app/img/fotoenlace.png"
+  />
+
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+</head>
+
 	<body class="bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)] dark:bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,rgba(236,72,153,0.4),transparent),linear-gradient(180deg,#0b0b1d_0%,#020617_100%)]">
 		<Header />
 		<main>
