@@ -9,39 +9,58 @@ const { title = "Los 50 de Carolina · 7 de Febrero", description =""} = Astro.p
 <!doctype html>
 <html lang="es" class="">
 	<head>
-  		<meta charset="UTF-8" />
+  <!-- Básico -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Los 50 de Caro · 6 de Febrero de 2026</title>
-
   <meta
     name="description"
     content="Vení a festejar los 50 de Caro con una fiesta inolvidable."
   />
 
-  <!-- Open Graph -->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://los-50-de-caro.vercel.app/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Open Graph (Facebook / WhatsApp / Discord) -->
   <meta property="og:url" content="https://los-50-de-caro.vercel.app/" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Los 50 de Caro" />
+  <meta property="og:locale" content="es_AR" />
+
   <meta property="og:title" content="Los 50 de Caro · 6 de Febrero de 2026" />
   <meta
     property="og:description"
     content="Vení a festejar los 50 de Caro con una fiesta inolvidable."
   />
+
+  <!-- IMPORTANTE: JPG para WhatsApp -->
   <meta
     property="og:image"
-    content="https://los-50-de-caro.vercel.app/img/fotoenlace.png"
+    content="https://los-50-de-caro.vercel.app/img/caro-5-0-og.jpg"
   />
+  <meta
+    property="og:image:secure_url"
+    content="https://los-50-de-caro.vercel.app/img/caro-5-0-og.jpg"
+  />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  <!-- Twitter -->
+  <!-- Twitter (X) -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Los 50 de Caro · 6 de Febrero de 2026" />
+  <meta
+    name="twitter:description"
+    content="Vení a festejar los 50 de Caro con una fiesta inolvidable."
+  />
   <meta
     name="twitter:image"
-    content="https://los-50-de-caro.vercel.app/img/fotoenlace.png"
+    content="https://los-50-de-caro.vercel.app/img/caro-5-0-og.jpg"
   />
-
-  <meta name="viewport" content="width=device-width" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
 
 	<body class="bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)] dark:bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,rgba(236,72,153,0.4),transparent),linear-gradient(180deg,#0b0b1d_0%,#020617_100%)]">
