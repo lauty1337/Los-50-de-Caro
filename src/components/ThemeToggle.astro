@@ -3,10 +3,10 @@ import Moon from "./icons/Moon.astro";
 import Sun from "./icons/Sun.astro";
 ---
 <div class="hover:scale-110 transition active:scale-95 items-center">
-    <button class="cursor-pointer p-2 items-center  hidden dark:inline-block dark:text-white" id="btnLight">
+    <button class="cursor-pointer p-2 items-center  hidden dark:inline-block dark:text-white" id="btnLight" aria-label="Cambiar a tema claro">
         <Sun class="size-6 md:size-8"/>
     </button>
-    <button class="cursor-pointer p-2 inline-block dark:hidden" id="btnDark">
+    <button class="cursor-pointer p-2 inline-block dark:hidden" id="btnDark" aria-label="Cambiar a tema oscuro">
         <Moon class="size-6 md:size-8"/>
     </button>
 </div>
